@@ -1,0 +1,134 @@
+.footer {
+  background-color: #022b2b;
+  color: #e4f0ee;
+  padding: 50px 8%;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 35px;
+}
+
+.footer-logo span {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+}
+
+.footer-social svg {
+  color: #cceae7;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-social svg:hover {
+  color: #00b8a9;
+}
+
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0d5f5f;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.footer-subscribe input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 16px;
+  width: 200px;
+}
+
+.footer-subscribe input::placeholder {
+  color: #b8cfcc;
+}
+
+.footer-subscribe button {
+  background-color: #00b8a9;
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0 30px 30px 0;
+  transition: background 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+  background-color: #009687;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #114343;
+  margin: 30px 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.footer-column h4 {
+  color: #00b8a9;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-column a {
+  display: block;
+  color: #d9f3f1;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #00b8a9;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-subscribe input {
+    width: 160px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

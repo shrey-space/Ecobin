@@ -1,0 +1,70 @@
+/* RecycleHome.css */
+
+/* Container */
+.recyclehome-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.recyclehome-container h2 {
+  text-align: center;
+  color: #2e7d32; /* Green shade */
+  margin-bottom: 20px;
+}
+
+/* Recycler info section */
+.recycler-info {
+  margin-bottom: 20px;
+}
+
+.recycler-info h3 {
+  margin-bottom: 10px;
+  color: #444;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.recycler-info p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.recycler-info p strong {
+  color: #2e7d32;
+}
+
+/* Button styles */
+.action-btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recyclehome-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .recycler-info p {
+    font-size: 14px;
+  }
+}

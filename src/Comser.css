@@ -1,0 +1,86 @@
+.comser-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f7f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left Image Section */
+.comser-left {
+  flex: 1;
+}
+
+.comser-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/* Right Form Section */
+.comser-right {
+  flex: 1;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.comser-title {
+  font-size: 32px;
+  color: #0a4d29;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.comser-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.comser-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comser-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.comser-form input,
+.comser-form textarea,
+.comser-form select {
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.comser-form input:focus,
+.comser-form textarea:focus,
+.comser-form select:focus {
+  border-color: #0a4d29;
+}
+
+.comser-btn {
+  background-color: #0a4d29;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comser-btn:hover {
+  background-color: #107d48;
+}

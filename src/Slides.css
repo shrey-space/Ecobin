@@ -1,0 +1,49 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+   width:100%;
+  height:55%;
+  margin: auto;
+}
+
+
+.box_1{
+ width:50%;
+ height:100%;
+ 
+ display:flex;
+}
+.box_2{
+ width:50%;
+ height:100%;
+
+ display:flex;
+ 
+}
+.desc{
+  margin:20%;
+}
+.slide img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.arrow_left {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position:relative;
+ 
+  cursor: pointer;
+}
+.arrow_right {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position:relative;
+  
+  cursor: pointer;
+}
+

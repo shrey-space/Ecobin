@@ -1,0 +1,84 @@
+/* ========== MODULE 1 - OUR SERVICES SECTION (Fully Centered) ========== */
+.module-services {
+  background-color: #d5d8d9;
+  font-family: 'Arial', sans-serif;
+  color: #6a6a6a;
+  padding: 60px 20px;
+  margin: 0;
+  display: flex;                 /* center the whole section horizontally */
+  justify-content: center;       /* horizontally center all content */
+  text-align: center;            /* center text inside */
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;             /* control total section width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;           /* center everything horizontally */
+  justify-content: center;
+}
+
+/* ---------- Title + Subtitle ---------- */
+.module-text {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.module-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2c7a7b;
+  margin-bottom: 10px;
+}
+
+.module-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Cards Grid ---------- */
+.module-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;       /* center grid horizontally */
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #1f4e5f;
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .module-cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}

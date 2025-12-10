@@ -1,0 +1,197 @@
+/* ================================
+   Global Styling
+=================================== */
+.waste-collection-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 80px 100px;
+  background: linear-gradient(135deg, #f9fafb 0%, #e9f5ee 100%);
+  font-family: 'Poppins', sans-serif;
+  gap: 60px;
+  overflow: hidden;
+}
+
+/* ================================
+   Left Section - Image
+=================================== */
+.waste-image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waste-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.waste-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   Right Section - Content
+=================================== */
+.waste-content-section {
+  flex: 1.2;
+  color: #2f3e46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.waste-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #006b3c;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-left: 6px solid #009f54;
+  padding-left: 15px;
+}
+
+.waste-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+/* ================================
+   Cards (Steps & Benefits)
+=================================== */
+.waste-steps,
+.waste-benefits {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.waste-steps:hover,
+.waste-benefits:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.waste-steps h2,
+.waste-benefits h2 {
+  color: #00864e;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.waste-steps h2::after,
+.waste-benefits h2::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #00b46d;
+  border-radius: 10px;
+}
+
+.waste-steps ul,
+.waste-benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.waste-steps li,
+.waste-benefits li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 25px;
+}
+
+.waste-steps li::before,
+.waste-benefits li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00b46d;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.waste-steps li strong {
+  color: #007a47;
+}
+
+/* ================================
+   Animation
+=================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive Design
+=================================== */
+@media (max-width: 1200px) {
+  .waste-collection-container {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .waste-heading {
+    font-size: 2.4rem;
+  }
+
+  .waste-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .waste-collection-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .waste-content-section {
+    padding: 20px;
+  }
+
+  .waste-heading {
+    text-align: center;
+    border: none;
+    padding: 0;
+  }
+
+  .waste-image {
+    height: 400px;
+  }
+
+  .waste-steps,
+  .waste-benefits {
+    text-align: left;
+  }
+}

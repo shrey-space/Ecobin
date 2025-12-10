@@ -1,0 +1,1232 @@
+/* Layout */
+.society-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #1e293b;
+  color: white;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #334155;
+}
+
+.menu-item.active {
+  background-color: #4caf50;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+  flex: 1;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Header */
+.header-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  border-radius: 10px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #4caf50;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress-text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Chart */
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Three Boxes */
+.three-boxes {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #090000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.green-box {
+  background: #d1fae5;
+}
+
+.black-box {
+  background: #f19e9e;
+}
+
+.blue-box {
+  background: #dbeafe;
+}
+
+.box-value {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* Placeholder for other menus */
+.placeholder {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #555;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* Waste Tracking Section */
+.chart-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.progress-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.progress-card h4 {
+  margin-bottom: 10px;
+}
+
+.request-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.request-btn:hover {
+  background: #45a049;
+}
+
+/* Waste Collection Table */
+.history-table {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table th {
+  background: #f4f6f9;
+  font-weight: bold;
+}
+
+.history-table tr:hover {
+  background: #f9f9f9;
+}
+
+/* ================= EcoPoints Section ================= */
+/* Make the EcoPoints page take full width inside main content */
+.ecopoints-section {
+  width: 100%;
+  min-height: 80vh;          /* takes most of the screen height */
+  margin-top: 20px;
+  padding: 30px;
+  background: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+
+  /* Dashboard Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 20px;
+}
+
+/* Title (EcoPoints Dashboard) */
+.ecopoints-section h2 {
+  grid-column: 1 / -1;       /* span full width */
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2d3d;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Card Style */
+.ecopoints-section .card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ecopoints-section .card:hover {
+  transform: translateY(-3px);
+}
+
+/* Card Headings */
+.ecopoints-section .card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+/* Example styling for tables (history) */
+.ecopoints-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ecopoints-section th,
+.ecopoints-section td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.ecopoints-section th {
+  background: #f1f5f9;
+  color: #333;
+  font-weight: 600;
+}
+
+
+/* ---------------- History Table ---------------- */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.history-table th {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.history-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.history-table tr:nth-child(even) {
+  background: #f4f8f5;
+}
+
+.history-table .points-cell {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* ---------------- Styled Lists ---------------- */
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.styled-list li strong {
+  color: #2c3e50;
+}
+
+/* ---------------- Highlight Cards ---------------- */
+.highlight-card {
+  background: #e3f2fd;
+  border-left: 5px solid #2196f3;
+}
+
+.impact-card {
+  background: #e8f5e9;
+  border-left: 5px solid #43a047;
+}
+
+.target-card {
+  background: #fff3e0;
+  border-left: 5px solid #fb8c00;
+}
+
+.target-card .highlight {
+  font-weight: bold;
+  color: #e65100;
+}
+
+/* ---------------- Animation ---------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.leaderboard-section {
+  padding: 20px;
+}
+
+.leaderboard-filters {
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  padding: 8px 15px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+/*leaderbord section */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #e8f5e9;
+}
+
+.highlighted-society {
+  background-color: #fff7e6 !important;
+  font-weight: bold;
+}
+
+.progress-bar-small {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 4px 0;
+  width: 100px;
+}
+
+.progress-fill-small {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.progress-text-small {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.your-society-highlight {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff7e6;
+  border-left: 4px solid #ff9800;
+  font-weight: bold;
+}
+/* Leaderboard Filters */
+.leaderboard-filters {
+  margin-bottom: 15px;
+}
+.filter-btn {
+  padding: 8px 15px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+}
+.filter-btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.leaderboard-table th, .leaderboard-table td {
+  padding: 12px 10px;
+  text-align: left;
+}
+.leaderboard-table th {
+  background-color: #4caf50;
+  color: white;
+}
+.leaderboard-table tr:nth-child(even) { background-color: #f9f9f9; }
+.leaderboard-table tr:hover { background-color: #e8f5e9; }
+
+/* Highlight logged-in society */
+.highlighted-society {
+  background-color: #fff7e6 !important;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar-small {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 4px 0;
+  width: 100px;
+}
+.progress-fill-small {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+.progress-text-small { font-size: 12px; margin-left: 5px; }
+
+/* Your Society Highlight */
+.your-society-highlight {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff7e6;
+  border-left: 4px solid #ff9800;
+  font-weight: bold;
+}
+
+/* Nearby Societies & Rank Trend Section */
+.leaderboard-below-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nearby-societies { flex: 1; min-width: 300px; }
+.nearby-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.nearby-table th, .nearby-table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.nearby-table tr:hover { background-color: #f0f0f0; }
+
+/* Rank Trend Chart */
+.rank-trend { flex: 1; min-width: 400px; }
+.missions-section { margin-top: 20px; }
+
+.missions-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.mission-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.mission-item:last-child { border-bottom: none; }
+
+.status.notstarted { color: #ff9800; font-weight: bold; }
+.status.inprogress { color: #2196f3; font-weight: bold; }
+.status.completed { color: #4caf50; font-weight: bold; }
+
+.start-btn {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.start-btn:hover { background-color: #43a047; }
+
+.milestone-card .progress-bar-small {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+.progress-fill-small {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.upcoming .start-btn { background-color: #2196f3; }
+.upcoming .start-btn:hover { background-color: #1976d2; }
+/* ===== Missions Section Styling ===== */
+.home-section h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 20px;
+  border-left: 4px solid #27ae60;
+  padding-left: 10px;
+}
+
+.mission-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #3498db;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.mission-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mission-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.mission-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.mission-card strong {
+  color: #2c3e50;
+}
+
+.mission-card.completed {
+  border-left: 5px solid #27ae60;
+  background: #f7fff7;
+}
+
+.mission-card.completed h4 {
+  color: #2e7d32;
+}
+
+.mission-card.completed p {
+  color: #3a5d3a;
+}
+
+/* Message when no missions */
+.home-section p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Section separation */
+.home-section {
+  margin-bottom: 30px;
+}
+
+/* Families Section */
+.home-section .invite-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.home-section .invite-btn:hover {
+  background-color: #45a049;
+}
+
+.family-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.family-list li {
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.family-list li:hover {
+  background-color: #e0f7e0;
+  transform: translateX(5px);
+}
+
+.family-list li span {
+  font-weight: bold;
+  color: #333;
+}
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table th {
+  background-color: #2e7d32;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.current-society-row {
+  background-color: #e0f7fa !important; /* light teal highlight */
+  font-weight: 600;
+  border-left: 5px solid #009688;
+}
+
+.leaderboard-subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/* Highlight current society row */
+.current-society-row {
+  background-color: #fff9c4; /* Light yellow background */
+  font-weight: bold;          /* Make text bold */
+  color: #ff6f00;            /* Text color */
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight just the Society Name column */
+.current-society-row td:nth-child(2) {
+  color: #d32f2f; /* Red color for name */
+}
+
+/* Optional: hover effect for all rows */
+.leaderboard-table tr:hover {
+  background-color: #e0f7fa;
+}
+/* Highlight the current society row */
+.current-society-row {
+  background-color: #fff9c4; /* Light yellow background */
+  font-weight: bold;
+  color: #ff9800; /* Orange text */
+}
+
+
+/* 🌿 HOME DASHBOARD STYLING */
+.home-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f9fdfb 0%, #e8f5e9 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Titles */
+.dashboard-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 35px;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.summary-cards .card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  width: 220px;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.summary-cards .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.25);
+}
+
+.summary-cards .card h4 {
+  font-size: 1.1rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.summary-cards .card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 4px 0;
+}
+
+.summary-cards .card .small {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Charts Row */
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.chart-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  width: 480px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chart-box h4 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Missions Section */
+.missions-summary {
+  background: #ffffff;
+  border-left: 5px solid #81c784;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.missions-summary h4 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.missions-summary p {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.mission-mini {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+.mission-mini:hover {
+  background: #e8f5e9;
+  transform: translateX(4px);
+}
+
+/* Rewards Preview Section */
+.rewards-preview {
+  background: #ffffff;
+  border-left: 5px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 950px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.rewards-preview h4 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.reward-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reward-preview-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.reward-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.2);
+}
+
+.reward-products {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.reward-product-mini {
+  text-align: center;
+  width: 70px;
+}
+
+.reward-product-mini img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.reward-product-mini p {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 4px;
+}
+
+/* ✨ Hover glow effect */
+.card:hover,
+.chart-box:hover,
+.mission-mini:hover,
+.reward-preview-card:hover {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-box {
+    width: 100%;
+  }
+
+  .rewards-preview, .missions-summary {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-dashboard {
+    padding: 20px 10px;
+  }
+
+  .dashboard-title {
+    font-size: 1.6rem;
+  }
+
+  .chart-box {
+    padding: 15px;
+  }
+
+  .summary-cards .card {
+    width: 180px;
+  }
+}
+
+/*********************************************
+ 🌍 IMPACT SECTION — PROFESSIONAL DASHBOARD STYLE
+*********************************************/
+
+.impact-section {
+  background: linear-gradient(180deg, #f8fcf9 0%, #f2f7f3 100%);
+  border-radius: 18px;
+  padding: 60px 40px;
+  margin: 40px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  transition: all 0.3s ease;
+}
+
+.impact-section:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.impact-section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #165b45;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.impact-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 50px;
+}
+
+/* ✅ IMPACT STATS GRID */
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  justify-items: center;
+}
+
+.impact-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-card::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: radial-gradient(circle at center, rgba(36, 188, 128, 0.05), transparent 70%);
+  z-index: 0;
+}
+
+.impact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.impact-card h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a4f3f;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.impact-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e8b57;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.impact-label {
+  color: #777;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ CHART BOX */
+.impact-chart-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.impact-chart-box:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.impact-chart-box h3 {
+  color: #155c46;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+}
+
+/* ✅ SUMMARY BOX */
+.impact-summary {
+  background: linear-gradient(90deg, #e9f9f1 0%, #f5fdf8 100%);
+  border-left: 6px solid #2e8b57;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.impact-summary:hover {
+  transform: translateY(-3px);
+}
+
+.impact-summary h4 {
+  color: #1b5e44;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.impact-summary p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* ✅ RESPONSIVENESS */
+@media (max-width: 768px) {
+  .impact-section {
+    padding: 40px 20px;
+  }
+
+  .impact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .impact-subtitle {
+    font-size: 1rem;
+  }
+
+  .impact-number {
+    font-size: 1.6rem;
+  }
+
+  .impact-summary {
+    padding: 20px;
+  }
+}
+
+/* Help & Support Section */
+.help-support-section {
+  padding: 20px;
+  color: #333;
+  background: #f9fafb;
+  border-radius: 10px;
+}
+
+.help-intro {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.help-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.help-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.help-card h4 {
+  margin-bottom: 8px;
+  color: #2e7d32;
+}
+
+.help-faq {
+  margin-bottom: 30px;
+}
+
+.help-faq details {
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.help-faq summary {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.help-feedback textarea {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  float: right;
+}
