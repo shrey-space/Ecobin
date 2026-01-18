@@ -42,7 +42,7 @@ export default function Slides() {
             <button className="arrow_left left" onClick={prevSlide}>←</button>
 
         <img src={slidesData[current].image} alt="slide" /></div>
-         <div className="box_2"><h2 className="desc">{slidesData[current].text}</h2><button className="arrow_right right" onClick={nextSlide}>→</button></div>
+         <div className="box_2"><h2 className="desc">{slidesData[current].text}</h2><button className="arrow_right   right" onClick={nextSlide}>→</button></div>
       </div>
 
       
