@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+<h1 align="center">♻️ EcoBin</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <b>A MERN-based sustainable waste management platform</b><br>
+  Turning dry waste into value for communities.
+</p>
 
-## Available Scripts
+<p align="center">
+  <img src="https://img.shields.io/badge/Stack-MERN-green" />
+  <img src="https://img.shields.io/badge/Platform-Web-blue" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+</p>
 
-In the project directory, you can run:
+<hr>
 
-### `npm start`
+<h2>🌱 About EcoBin</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>
+Water, air, and environment are essential for a healthy life, but waste mismanagement
+has become a major issue in modern societies. Large amounts of recyclable dry waste
+often go unused or are disposed of improperly.
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>
+<b>EcoBin</b> is a web-based platform designed to collect dry recyclable waste from housing
+societies and sell it to authorized recycling companies. Instead of direct cash returns,
+societies receive useful and essential items in return, promoting both sustainability
+and community benefit.
+</p>
 
-### `npm test`
+<p>
+This platform was built using the <b>MERN stack</b> and is intended for teams or organizations
+who want to run structured, scalable, and impact-driven waste management operations.
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+<h2>⚙️ How EcoBin Works</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ol>
+  <li>
+    Housing societies register and list their dry recyclable waste.
+  </li>
+  <li>
+    The EcoBin team collects the waste from societies.
+  </li>
+  <li>
+    Collected waste is sold to authorized recycling companies.
+  </li>
+  <li>
+    Revenue generated from recycling is converted into useful items.
+  </li>
+  <li>
+    These items are offered back to societies as a return benefit.
+  </li>
+</ol>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>
+This approach ensures transparency, sustainability, and real value creation
+without encouraging direct cash handling.
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+<h2>✨ Key Features</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<ul>
+  <li>Dry waste collection from housing societies</li>
+  <li>Direct collaboration with recycling companies</li>
+  <li>Non-cash reward system for societies</li>
+  <li>Team-oriented operational model</li>
+  <li>Scalable and sustainable workflow</li>
+</ul>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h2>🛠️ Tech Stack</h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<ul>
+  <li><b>Frontend:</b> React.js</li>
+  <li><b>Backend:</b> Node.js, Express.js</li>
+  <li><b>Database:</b> MongoDB</li>
+  <li><b>Stack:</b> MERN</li>
+</ul>
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2>🚀 How to Run the Project Locally</h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<pre>
+git clone https://github.com/shrey-space/Ecobin.git
+</pre>
 
-### Code Splitting
+<ol>
+  <li>Navigate to the project directory</li>
+  <li>Install backend dependencies using <code>npm install</code></li>
+  <li>Install frontend dependencies inside the <b>client</b> folder</li>
+  <li>Create a <code>.env</code> file for environment variables</li>
+  <li>Run backend and frontend servers</li>
+</ol>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+<h2>🎯 Purpose of the Project</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<ul>
+  <li>Promote sustainable waste management</li>
+  <li>Provide value-driven recycling solutions</li>
+  <li>Practice full-stack MERN development</li>
+  <li>Build a real-world, impact-focused platform</li>
+</ul>
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h2>👨‍💻 Author</h2>
 
-### Advanced Configuration
+<p>
+<b>Shrey</b><br>
+Software & Full-Stack Development Enthusiast<br>
+GitHub: <a href="https://github.com/shrey-space">shrey-space</a>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<h2>📌 Future Enhancements</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<ul>
+  <li>User authentication and roles</li>
+  <li>Waste tracking and analytics dashboard</li>
+  <li>Automated pickup scheduling</li>
+  <li>Integration with local recycling partners</li>
+</ul>
 
-### `npm run build` fails to minify
+<hr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+⭐ If you like this project, consider starring the repository.
+</p>
